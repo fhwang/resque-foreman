@@ -4,7 +4,6 @@ module Resque
       module Job
         def self.included(micro_job_class)
           micro_job_class.extend(ClassMethods)
-          micro_job_class.cattr_accessor :foreman_class
         end
         
         module ClassMethods
